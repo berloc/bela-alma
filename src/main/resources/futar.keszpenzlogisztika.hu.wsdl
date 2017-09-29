@@ -2,8 +2,8 @@
 <definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://netlife.hu/g4futar/webservice/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://netlife.hu/g4futar/webservice/">
 <types>
 <xsd:schema targetNamespace="http://netlife.hu/g4futar/webservice/">
- <xsd:import schemaLocation="http://schemas.xmlsoap.org/soap/envelope/" namespace="http://schemas.xmlsoap.org/soap/encoding/" />
-<!--<xsd:import schemaLocation="schemas.xmlsoap.org_soap_encoding.xsd" namespace="http://schemas.xmlsoap.org/soap/encoding/" />  -->
+ <!--<xsd:import schemaLocation="schemas.xmlsoap.org_soap_encoding.xsd" namespace="http://schemas.xmlsoap.org/soap/encoding/" />-->
+<xsd:import schemaLocation="schemas.xmlsoap.org_soap_encoding.xsd" namespace="http://schemas.xmlsoap.org/soap/encoding/" />
 
  <!-- Manual csodak - request -->
  <xsd:element name="rendeles">
@@ -216,7 +216,7 @@
 </binding>
 <service name="VodafoneService">
   <port name="VodafoneServicePort" binding="tns:VodafoneServiceBinding">
-    <soap:address location="http://futarteszt.keszpenzlogisztika.hu/webservice/server.php"/>
+    <soap:address location="http://futar.keszpenzlogisztika.hu/webservice/server.php"/>
   </port>
 </service>
 </definitions>
