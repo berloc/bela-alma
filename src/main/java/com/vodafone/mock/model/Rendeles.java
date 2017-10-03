@@ -24,7 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="szallitasiAdatok" type="{http://netlife.hu/g4futar/webservice/}SzallitasiAdatok"/>
  *         &lt;element name="tipus" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="futarnalBankkartyaFizetes" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="item" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="azonnaliSzallitas" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="fixIdejuRendeles" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/all>
@@ -177,7 +177,7 @@ public class Rendeles {
     }
 
     /**
-     * Gets the value of the status property.
+     * Gets the value of the item property.
      * 
      */
     public int getStatus() {
@@ -185,7 +185,7 @@ public class Rendeles {
     }
 
     /**
-     * Sets the value of the status property.
+     * Sets the value of the item property.
      * 
      */
     public void setStatus(int value) {

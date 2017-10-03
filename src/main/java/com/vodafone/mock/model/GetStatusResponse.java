@@ -1,11 +1,8 @@
 
 package com.vodafone.mock.model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
+import java.util.List;
 
 
 /**
@@ -18,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;all>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
+ *         &lt;element name="item" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
  *       &lt;/all>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,29 +32,29 @@ import javax.xml.bind.annotation.XmlType;
 public class GetStatusResponse {
 
     @XmlElement(required = true)
-    protected Object status;
+    protected List<StatusObject> status;
 
     /**
-     * Gets the value of the status property.
+     * Gets the value of the item property.
      * 
      * @return
      *     possible object is
      *     {@link Object }
      *     
      */
-    public Object getStatus() {
+    public List<StatusObject> getStatus() {
         return status;
     }
 
     /**
-     * Sets the value of the status property.
+     * Sets the value of the item property.
      * 
      * @param value
      *     allowed object is
      *     {@link Object }
      *     
      */
-    public void setStatus(Object value) {
+    public void setStatus(List<StatusObject> value) {
         this.status = value;
     }
 
