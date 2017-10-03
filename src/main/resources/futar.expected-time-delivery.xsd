@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980. --><xs:schema xmlns:tns="http://expectedtimedelivery.ws.g4s.netlife.hu/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://expectedtimedelivery.ws.g4s.netlife.hu/">
+
+<xs:complexType name="deliveryData">
+<xs:sequence>
+<xs:element name="afternoonEnd" type="xs:int"/>
+<xs:element name="afternoonStart" type="xs:int"/>
+<xs:element name="area" type="xs:string"/>
+<xs:element name="city" type="xs:string"/>
+<xs:element name="morningEnd" type="xs:int"/>
+<xs:element name="morningStart" type="xs:int"/>
+<xs:element name="possibleFixed" type="xs:boolean"/>
+<xs:element name="zipcode" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deliveryDataArray" final="#all">
+<xs:sequence>
+<xs:element name="item" type="tns:deliveryData" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
