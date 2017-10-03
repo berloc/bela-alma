@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;all>
- *         &lt;element name="rendelesReturn" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
+ *         &lt;element name="createRendelesReturn" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
  *       &lt;/all>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -38,7 +38,7 @@ public class RendelesResponse {
     protected Object rendelesReturn;
 
     /**
-     * Gets the value of the rendelesReturn property.
+     * Gets the value of the createRendelesReturn property.
      * 
      * @return
      *     possible object is
@@ -50,7 +50,7 @@ public class RendelesResponse {
     }
 
     /**
-     * Sets the value of the rendelesReturn property.
+     * Sets the value of the createRendelesReturn property.
      * 
      * @param value
      *     allowed object is

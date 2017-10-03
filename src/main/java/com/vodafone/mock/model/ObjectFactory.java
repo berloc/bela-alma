@@ -71,6 +71,7 @@ public class ObjectFactory {
     private final static javax.xml.namespace.QName _NMTOKEN_QNAME = new javax.xml.namespace.QName("http://schemas.xmlsoap.org/soap/encoding/", "NMTOKEN");
     private final static javax.xml.namespace.QName _NMTOKENS_QNAME = new javax.xml.namespace.QName("http://schemas.xmlsoap.org/soap/encoding/", "NMTOKENS");
     private final static javax.xml.namespace.QName _PositiveInteger_QNAME = new javax.xml.namespace.QName("http://schemas.xmlsoap.org/soap/encoding/", "positiveInteger");
+    private final static javax.xml.namespace.QName _RENDELESRETURN_QNAME = new javax.xml.namespace.QName("http://schemas.xmlsoap.org/soap/encoding/", "rendelesReturn");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.vodafone.mock.model
@@ -973,6 +974,11 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/encoding/", name = "positiveInteger")
     public JAXBElement<PositiveInteger> createPositiveInteger(PositiveInteger value) {
         return new JAXBElement<PositiveInteger>(_PositiveInteger_QNAME, PositiveInteger.class, null, value);
+    }
+
+    @XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/encoding/", name = "rendelesReturn")
+    public JAXBElement<RendelesReturn> createRendelesReturn(RendelesReturn value) {
+        return new JAXBElement<>(_PositiveInteger_QNAME, RendelesReturn.class, null, value);
     }
 
 }
