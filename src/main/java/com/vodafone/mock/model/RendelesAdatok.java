@@ -8,5 +8,5 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "rendelesAdatok", namespace = "http://netlife.hu/g4futar/webservice/", propOrder = {
 
 })
-public class RendelesAdatok {
+public class RendelesAdatok extends SzallitasiAdatok {
 }
