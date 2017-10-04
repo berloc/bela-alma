@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://netlife.hu/g4futar/webservice/">
+    <SOAP-ENV:Body>
+        <ns1:rendelesResponse xmlns:ns1="http://netlife.hu/g4futar/webservice/">
+            <rendelesReturn xsi:type="tns:rendelesReturn">
+                <ack xsi:type="xsd:string">success</ack>
+                <fuvarlevel xsi:type="xsd:string">JVBERi0xLjQKMSAwwDl6ZSAzNQovSW5mbyAxIDAgUgovUm9vdCAxNSAwIFIKPj4Kc3RhcnR4cmVmCjI1NDExCiUlRU9GCg==</fuvarlevel>
+                <G4SOrderID xsi:type="xsd:int">2890798</G4SOrderID>
+            </rendelesReturn>
+        </ns1:rendelesResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

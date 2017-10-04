@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://netlife.hu/g4futar/webservice/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <web:getStatus soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+            <idArray xsi:type="web:IdArray">
+                <!--1 or more repetitions:-->
+                <id xsi:type="xsd:int">2210469</id>
+            </idArray>
+        </web:getStatus>
+    </soapenv:Body>
+</soapenv:Envelope>

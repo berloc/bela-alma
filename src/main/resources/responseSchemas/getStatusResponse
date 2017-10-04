@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://netlife.hu/g4futar/webservice/">
+    <SOAP-ENV:Body>
+        <ns1:getStatusResponse xmlns:ns1="http://netlife.hu/g4futar/webservice/">
+            <status xsi:type="SOAP-ENC:Array" SOAP-ENC:arrayType="tns:StatusObject[2]">
+                <item xsi:type="tns:StatusObject">
+                    <id xsi:type="xsd:int">2210469</id>
+                    <status xsi:type="xsd:string">4</status>
+                </item>
+                <item xsi:type="tns:StatusObject">
+                    <id xsi:type="xsd:int">9810469</id>
+                    <status xsi:type="xsd:string">0</status>
+                </item>
+            </status>
+        </ns1:getStatusResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

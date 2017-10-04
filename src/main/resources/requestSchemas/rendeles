@@ -1,0 +1,34 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://netlife.hu/g4futar/webservice/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <web:rendeles soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+            <action xsi:type="xsd:string">create</action>
+            <VFHUWS-OrderID xsi:type="xsd:string">3262423</VFHUWS-OrderID>
+            <G4SOrderID xsi:type="xsd:int">252423</G4SOrderID>
+            <szallitasiAdatok xsi:type="web:SzallitasiAdatok">
+                <!--You may enter the following 16 items in any order-->
+                <c_nev xsi:type="xsd:string">Neve Nincsen</c_nev>
+                <c_szemely xsi:type="xsd:string">Neve nincsen</c_szemely>
+                <c_irsz xsi:type="xsd:string">1096</c_irsz>
+                <c_helyseg xsi:type="xsd:string">Budapest</c_helyseg>
+                <c_utca xsi:type="xsd:string">Lechner Ödön utca</c_utca>
+                <c_telefon xsi:type="xsd:string"></c_telefon>
+                <c_email xsi:type="xsd:string"></c_email>
+                <c_vevokod xsi:type="xsd:string">VOD890-15402270</c_vevokod>
+                <szamlaszam xsi:type="xsd:string">VOD890-15402270</szamlaszam>
+                <utanvetel xsi:type="xsd:string">1414</utanvetel>
+                <darab xsi:type="xsd:int">1</darab>
+                <suly xsi:type="xsd:string">1</suly>
+                <tartalom xsi:type="xsd:string">telefon</tartalom>
+                <instrukcio xsi:type="xsd:string"></instrukcio>
+                <feladobetujel xsi:type="xsd:string">VOD</feladobetujel>
+                <helyszin xsi:type="xsd:int">1</helyszin>
+            </szallitasiAdatok>
+            <tipus xsi:type="xsd:int">1</tipus>
+            <futarnalBankkartyaFizetes xsi:type="xsd:boolean">false</futarnalBankkartyaFizetes>
+            <status xsi:type="xsd:int">1</status>
+            <azonnaliSzallitas xsi:type="xsd:boolean">false</azonnaliSzallitas>
+            <fixIdejuRendeles xsi:type="xsd:string"></fixIdejuRendeles>
+        </web:rendeles>
+    </soapenv:Body>
+</soapenv:Envelope>

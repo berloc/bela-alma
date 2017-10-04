@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://netlife.hu/g4futar/webservice/">
+    <SOAP-ENV:Body>
+        <ns1:getRendelesDataResponse xmlns:ns1="http://netlife.hu/g4futar/webservice/">
+            <rendelesAdatok xsi:type="tns:SzallitasiAdatok">
+                <c_nev xsi:type="xsd:string">Haász Regina</c_nev>
+                <c_szemely xsi:type="xsd:string">Haász regina</c_szemely>
+                <c_irsz xsi:type="xsd:string">8000</c_irsz>
+                <c_helyseg xsi:type="xsd:string">Székesfehérvár</c_helyseg>
+                <c_utca xsi:type="xsd:string">Kaszap István u.</c_utca>
+                <c_telefon xsi:type="xsd:string"></c_telefon>
+                <c_email xsi:type="xsd:string"></c_email>
+                <c_vevokod xsi:type="xsd:string">4211-439834</c_vevokod>
+                <szamlaszam xsi:type="xsd:string">0</szamlaszam>
+                <utanvetel xsi:type="xsd:string">7590</utanvetel>
+                <darab xsi:type="xsd:int">1</darab>
+                <suly xsi:type="xsd:string">1.7</suly>
+                <tartalom xsi:type="xsd:string"></tartalom>
+                <instrukcio xsi:type="xsd:string"></instrukcio>
+                <feladobetujel xsi:type="xsd:string">megveheti.hu Webáruház</feladobetujel>
+                <helyszin xsi:type="xsd:int">1</helyszin>
+            </rendelesAdatok>
+            <tipus xsi:nil="true" xsi:type="xsd:int"/>
+            <futarnalBankkartyaFizetes xsi:type="xsd:boolean">false</futarnalBankkartyaFizetes>
+            <azonnaliSzallitas xsi:type="xsd:boolean">false</azonnaliSzallitas>
+            <fixIdejuRendeles xsi:nil="true" xsi:type="xsd:string"/>
+            <realDeliveryTime xsi:type="xsd:string">2015-06-04 09:36:00</realDeliveryTime>
+            <status xsi:type="xsd:int">4</status>
+        </ns1:getRendelesDataResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

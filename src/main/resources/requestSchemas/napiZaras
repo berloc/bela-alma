@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://netlife.hu/g4futar/webservice/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <web:napiZaras soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+            <helyszinId xsi:type="xsd:int">1</helyszinId>
+        </web:napiZaras>
+    </soapenv:Body>
+</soapenv:Envelope>
