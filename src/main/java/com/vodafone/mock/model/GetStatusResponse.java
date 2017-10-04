@@ -2,7 +2,6 @@
 package com.vodafone.mock.model;
 
 import javax.xml.bind.annotation.*;
-import java.util.List;
 
 
 /**
@@ -32,7 +31,7 @@ import java.util.List;
 public class GetStatusResponse {
 
     @XmlElement(required = true)
-    protected List<StatusObject> status;
+    protected ItemArray status;
 
     /**
      * Gets the value of the item property.
@@ -42,19 +41,19 @@ public class GetStatusResponse {
      *     {@link Object }
      *     
      */
-    public List<StatusObject> getStatus() {
+    public ItemArray getStatus() {
         return status;
     }
 
     /**
      * Sets the value of the item property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link Object }
      *     
      */
-    public void setStatus(List<StatusObject> value) {
+    public void setStatus(ItemArray value) {
         this.status = value;
     }
 

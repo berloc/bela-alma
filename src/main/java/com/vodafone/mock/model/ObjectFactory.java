@@ -72,7 +72,7 @@ public class ObjectFactory {
     private final static javax.xml.namespace.QName _NMTOKENS_QNAME = new javax.xml.namespace.QName("http://schemas.xmlsoap.org/soap/encoding/", "NMTOKENS");
     private final static javax.xml.namespace.QName _PositiveInteger_QNAME = new javax.xml.namespace.QName("http://schemas.xmlsoap.org/soap/encoding/", "positiveInteger");
     private final static javax.xml.namespace.QName _RENDELESRETURN_QNAME = new javax.xml.namespace.QName("http://schemas.xmlsoap.org/soap/encoding/", "rendelesReturn");
-    private final static javax.xml.namespace.QName _STATUSRESPONSE_QNAME = new javax.xml.namespace.QName("http://schemas.xmlsoap.org/soap/encoding/", "getItem");
+    private final static javax.xml.namespace.QName _STATUSRESPONSE_QNAME = new javax.xml.namespace.QName("http://schemas.xmlsoap.org/soap/encoding/", "getStatus");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.vodafone.mock.model
@@ -982,7 +982,8 @@ public class ObjectFactory {
         return new JAXBElement<>(_RENDELESRETURN_QNAME, RendelesReturn.class, null, value);
     }
 
+    @XmlElementDecl(namespace = "http://schemas.xmlsoap.org/soap/encoding/", name = "getStatusResponse")
     public JAXBElement<GetStatusResponse> createGetStatusResponse(GetStatusResponse response) {
-        return new JAXBElement<GetStatusResponse>(_STATUSRESPONSE_QNAME, GetStatusResponse.class, null, response);
+        return new JAXBElement<>(_STATUSRESPONSE_QNAME, GetStatusResponse.class, null, response);
     }
 }

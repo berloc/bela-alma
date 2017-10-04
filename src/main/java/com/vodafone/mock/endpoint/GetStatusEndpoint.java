@@ -1,8 +1,6 @@
 package com.vodafone.mock.endpoint;
 
-import com.vodafone.mock.model.GetStatus;
-import com.vodafone.mock.model.GetStatusResponse;
-import com.vodafone.mock.model.StatusObject;
+import com.vodafone.mock.model.*;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -18,10 +16,10 @@ public class GetStatusEndpoint extends AbstractEndpoint{
     @ResponsePayload
     public GetStatusResponse getStatus(@RequestPayload GetStatus request) {
 
-        GetStatusResponse response = new GetStatusResponse();
+        GetStatusResponse response = factory.createGetStatusResponse();
 
-        StatusObject statusObject = new StatusObject();
-        StatusObject statusObject2 = new StatusObject();
+        StatusObject statusObject = factory.createStatusObject();
+        StatusObject statusObject2 = factory.createStatusObject();
         statusObject.setId(1);
         statusObject.setStatus("alma");
         statusObject2.setId(3);
@@ -29,7 +27,15 @@ public class GetStatusEndpoint extends AbstractEndpoint{
         List<StatusObject> statusList = new ArrayList<>();
         statusList.add(statusObject);
         statusList.add(statusObject2);
-        response.setStatus(statusList);
+
+        ItemArray itemArray = new ItemArray();
+        itemArray.setItems(statusList);
+
+
+
+
+
+        response.setStatus(itemArray);
 
         return response;
     }
