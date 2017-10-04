@@ -21,19 +21,15 @@ public class GetStatusEndpoint extends AbstractEndpoint{
         StatusObject statusObject = factory.createStatusObject();
         StatusObject statusObject2 = factory.createStatusObject();
         statusObject.setId(1);
-        statusObject.setStatus("alma");
-        statusObject2.setId(3);
-        statusObject2.setStatus("kiskutyafasza");
+        statusObject.setStatus("20");
+        statusObject2.setId(2);
+        statusObject2.setStatus("5");
         List<StatusObject> statusList = new ArrayList<>();
         statusList.add(statusObject);
         statusList.add(statusObject2);
-
+        
         ItemArray itemArray = new ItemArray();
         itemArray.setItems(statusList);
-
-
-
-
 
         response.setStatus(itemArray);
 

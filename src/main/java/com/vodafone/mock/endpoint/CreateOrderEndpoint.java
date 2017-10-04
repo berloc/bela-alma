@@ -18,9 +18,9 @@ public class CreateOrderEndpoint extends AbstractEndpoint {
 
         RendelesReturn response = new RendelesReturn();
 
-        response.setFuvarlevel("alma");
+        response.setFuvarlevel("fuvarlevél pdf-ben");
         response.setG4SOrderID(23);
-        response.setAck("körte");
+        response.setAck("success");
 
         return factory.createRendelesReturn(response);
     }
