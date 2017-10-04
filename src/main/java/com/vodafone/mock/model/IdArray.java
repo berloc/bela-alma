@@ -1,7 +1,9 @@
 
 package com.vodafone.mock.model;
 
+import java.lang.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -64,6 +66,10 @@ public class IdArray {
             id = new ArrayList<java.lang.Integer>();
         }
         return this.id;
+    }
+
+    public void populateSomeStuffBasedOnLocationId(java.lang.Integer locationId){
+        id = Arrays.asList(1, 2, 3, 4, 5, 6);
     }
 
 }

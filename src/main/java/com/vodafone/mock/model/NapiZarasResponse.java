@@ -33,7 +33,7 @@ import java.util.ArrayList;
 public class NapiZarasResponse {
 
     @XmlElement(name = "G4SOrderIDk", required = true)
-    protected Object g4SOrderIDk;
+    protected IdArray g4SOrderIDk;
 
     /**
      * Gets the value of the g4SOrderIDk property.
@@ -55,7 +55,7 @@ public class NapiZarasResponse {
      *     {@link Object }
      *     
      */
-    public void setG4SOrderIDk(Object value) {
+    public void setG4SOrderIDk(IdArray value) {
         this.g4SOrderIDk = value;
     }
 
