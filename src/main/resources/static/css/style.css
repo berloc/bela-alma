@@ -70,7 +70,7 @@ body {
 @keyframes startLogo {
     0% {background-color: beige; box-shadow: 0 0 0 white;}
     33% {box-shadow: 0 0 0 white;}
-    100% {background-color: white; box-shadow: 0 0 15px #555;}
+    100% {background-color: white; box-shadow: 0 0 15px red;}
 }
 
 @keyframes startContainer {
