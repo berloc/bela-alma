@@ -1,0 +1,79 @@
+body {
+    background-color: beige;
+}
+
+.navbar-right {
+    margin-right: 10px;
+}
+
+.block-container {
+    padding: 10px;
+}
+
+.container {
+    padding-top: 65px;
+    background-color: white;
+    animation: startContainer 2s ease-in forwards;
+}
+
+.img-container {
+    border-radius: 2%;
+    padding: 20px;
+    margin-top: 50px;
+    animation: startLogo 2s ease-in forwards;
+}
+
+.logo {
+    animation: appear 4s ease-in forwards;
+}
+
+.welcome-text {
+    color: #555;
+    font-family: 'Montserrat', cursive;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+#line-1 {
+    transform: rotateX(-90deg);
+    animation: roll 0.5s ease-in forwards;
+    animation-delay: 2s;
+    transform-origin: top;
+}
+
+#line-2 {
+    transform: rotateX(-90deg);
+    animation: roll 0.5s ease-in forwards;
+    animation-delay: 2.2s;
+    transform-origin: top;
+}
+
+#line-3 {
+    transform: rotateX(-90deg);
+    animation: roll 0.5s ease-in forwards;
+    animation-delay: 2.4s;
+    transform-origin: top;
+}
+
+@keyframes roll {
+    0% {transform: rotateX(-90deg);}
+    100% {transform: rotateX(0deg);}
+}
+
+@keyframes appear {
+    0% {opacity: 0;}
+    33% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes startLogo {
+    0% {background-color: beige; box-shadow: 0 0 0 white;}
+    33% {box-shadow: 0 0 0 white;}
+    100% {background-color: white; box-shadow: 0 0 15px #555;}
+}
+
+@keyframes startContainer {
+    0% {background-color: beige;}
+    100% {background-color: white;}
+}
