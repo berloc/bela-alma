@@ -78,7 +78,7 @@
  <xsd:complexType name="StatusObject">
   <xsd:all>
    <xsd:element name="id" type="xsd:int"/>
-   <xsd:element name="status" type="xsd:string"/>
+   <xsd:element name="item" type="xsd:string"/>
   </xsd:all>
  </xsd:complexType>
  <xsd:complexType name="StatusArray">
