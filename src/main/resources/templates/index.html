@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>G4S mock</title>
+    <title>KEKKH mock</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -12,39 +12,39 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
           crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
 
 
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#" id="button0">G4S mock service</a>
-        </div>
-        <p class="navbar-text navbar-right">Vodafone</p>
-    </div>
-</nav>
-<!-- Navbar -->
-
-<!-- Main content -->
 <div class="container">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-        <div class="img-container">
-            <img src="img/vodafone.png" class="img-responsive logo"/>
+    <div class="well col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+        <div class="row title-container"><h1>G4S mock service</h1></div>
+        <div class="return-container row">
+            <p>Will return:</p>
+            <p id="success-text" class="response-text">
+                Response = <b>true</b>
+            </p>
+            <p id="error-text" class="response-text">
+                Response = <b>false</b>
+            </p>
+            <p id="loading-text" class="response-text">
+                Loading...
+            </p>
         </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-        <div class="welcome-text">
-            <p id="line-1">Welcome</p>
-            <p id="line-2">The app is loaded...</p>
-            <p id="line-3">You may start using the mockservice</p>
+        <div class="row"><p>Set expected response to:</p></div>
+        <div class="row">
+            <button class="btn btn-success" id="success-button">
+                Success<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-danger" id="error-button">
+                Error<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </button>
         </div>
     </div>
 </div>
 
+<script th:src="@{/js/script.js}"></script>
 </body>
 </html>

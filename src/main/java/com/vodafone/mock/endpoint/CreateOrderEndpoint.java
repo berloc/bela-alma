@@ -12,16 +12,24 @@ import javax.xml.bind.JAXBElement;
 @Endpoint
 public class CreateOrderEndpoint extends AbstractEndpoint {
 
+    public static Boolean ISVALID = true;
+
+
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "rendeles")
     @ResponsePayload
     public JAXBElement<RendelesReturn> createOrder(@RequestPayload Rendeles request) {
 
+
         RendelesReturn response = new RendelesReturn();
 
-        response.setFuvarlevel("fuvarlevél pdf-ben");
-        response.setG4SOrderID(23);
-        response.setAck("success");
-
+        if (ISVALID) {
+            response.setFuvarlevel("fuvarlevél pdf-ben");
+            response.setG4SOrderID(23);
+            response.setAck("success");
+        } else {
+            response.setAck("Unknown error");
+            response.setHiba("Non-recognized action parameter...? Call Borsi!");
+        }
         return factory.createRendelesReturn(response);
     }
 }
