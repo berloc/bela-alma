@@ -35,7 +35,7 @@ var initApp = function(){
     };
     responseText = "loading-text";
     renderText();
-    request.open("GET", "http://localhost:8080/api/current", true);
+    request.open("GET", "mockG4S/api/current", true);
     request.send();
 };
 
@@ -58,7 +58,7 @@ var setResponse = function(){
     };
     responseText = "loading-text";
     renderText();
-    request.open("POST", "http://localhost:8080/api/toggle", true);
+    request.open("POST", "mockG4S/api/toggle", true);
     request.setRequestHeader("Content-Type", "application/json");
     request.send(JSON.stringify({"valid": valid}));
 };
